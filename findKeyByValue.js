@@ -6,10 +6,10 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-const findKeyByValue = function(bestShowObj, searchedShow) {
-  for (let genre in bestShowObj) {
-    if (bestShowObj[genre] === searchedShow) {
-      return genre;
+const findKeyByValue = function(obj, value) {
+  for (let key in obj) {
+    if (obj[key] === value) {
+      return key;
     }
   }
 }
